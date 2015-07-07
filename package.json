@@ -1,0 +1,70 @@
+{
+  "name": "cv-gallery",
+  "version": "0.0.0",
+  "main": "dist/",
+  "scripts": {
+    "clean:dist": "rimraf ./dist/*",
+    "clean:tmp": "rimraf .tmp/",
+
+    "prebuild": "npm run clean:dist -s",
+    "build": "npm run build:scripts && npm run build:styles",
+    "build:scripts": "babel src --out-dir dist",
+    "build:styles": "node-sass src/index.scss dist/cv-gallery.css",
+    "postbuild:styles": "cp dist/cv-gallery.css dist/_cv-gallery.scss",
+    "postinstall": "npm run build",
+
+    "lint": "npm run lint:jscs && npm run lint:eslint && npm run lint:sass",
+    "lint:jscs": "cat ./{src,test}/**/*.{js,jsx} | jscs",
+    "lint:eslint": "eslint --ext=\".js\" --ext=\".jsx\" src/",
+    "lint:sass": "scss-lint src/",
+    "postlint": "npm run clean:tmp",
+
+    "test": "mocha --compilers js:babel/register --recursive",
+    "test:watch": "npm run test -- -w test src --watch-extensions jsx",
+
+    "dev": "npm run dev:open && npm run dev:serve",
+    "dev:serve": "webpack-dev-server --devtool eval --progress --colors --content-base docs/",
+    "dev:open": "opener http://localhost:8080",
+
+    "predoc": "npm run clean:dist",
+    "doc": "npm run doc:build",
+    "doc:build": "webpack --config webpack.doc.config.js",
+    "postdoc": "cp -r docs/ ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:carlosvillu/react-gallery.git"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "@schibstedspain/frontend-pre-commit-rules": "latest",
+    "@schibstedspain/theme-sui": "latest",
+    "babel": "^5.5.6",
+    "babel-eslint": "~3.1.14",
+    "babel-jscs": "^1.0.1",
+    "babel-loader": "^5.1.4",
+    "css-loader": "^0.14.5",
+    "csslint": "^0.10.0",
+    "eslint": "~0.23.0",
+    "eslint-plugin-react": "~2.5.0",
+    "expect": "^1.6.0",
+    "jscs": "~1.13.1",
+    "lodash": "~3.9.3",
+    "mocha": "^2.2.5",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.1.2",
+    "opener": "^1.4.1",
+    "react-hot-loader": "^1.2.7",
+    "rimraf": "^2.4.0",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0"
+  }
+}
