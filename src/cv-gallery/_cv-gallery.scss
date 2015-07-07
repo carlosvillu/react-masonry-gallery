@@ -1,6 +1,23 @@
-$color: #ccc;
-
 .cv-Gallery {
-  background-color: $color;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0;
+  margin: 0 auto;
+  width: 80%;
 }
 
+.cv-Gallery-figure {
+  margin: 0;
+}
+
+.cv-Gallery-image {
+  height: auto;
+  width: 100%;
+}
+
+@media all and (max-width: 900px) {
+  .cv-Gallery {
+    width: 100%;
+  }
+}
