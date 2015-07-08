@@ -5,14 +5,14 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:8080',
     'webpack/hot/only-dev-server',
-    path.resolve(__dirname, 'docs/index.jsx'),
+    path.resolve(__dirname, 'docs/index.jsx')
   ],
   output: {
     path: path.resolve(__dirname, 'docs/dist'),
-    filename: 'dist/index.js',
+    filename: 'dist/index.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: "style!css!sass"
+        loader: 'style!css!sass'
       }
     ]
   },
@@ -31,3 +31,4 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ]
 };
+
