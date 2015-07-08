@@ -15,7 +15,7 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: [ 'babel-loader?optional=runtime'],
+        loader: 'babel',
         exclude: path.join(__dirname, 'node_modules')
       },
       {
