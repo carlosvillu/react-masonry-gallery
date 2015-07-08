@@ -63,6 +63,8 @@
 
 	__webpack_require__(161);
 
+	__webpack_require__(165);
+
 	var images = ['orange-butterfly.jpg', 'butterfly-on-yellow-flower.jpg', 'butterfly-on-petal.jpg', 'albino-butterfly.jpg', 'blue-butterfly.jpg'].map(function (filename) {
 	  return 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/' + filename;
 	});
@@ -20625,8 +20627,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./style.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./style.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -20640,7 +20642,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(163)();
-	exports.push([module.id, ".cv-MasonryGallery {\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: row wrap;\n  font-size: 0;\n  margin: 0 auto;\n  width: 80%; }\n\n.cv-MasonryGallery-figure {\n  margin: 0; }\n\n.cv-MasonryGallery-image {\n  height: auto;\n  width: 100%; }\n\n@media all and (max-width: 900px) {\n  .cv-MasonryGallery {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, "body {\n  background: #f00; }\n", ""]);
 
 /***/ },
 /* 163 */
@@ -20922,6 +20924,39 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(166);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(164)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 166 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(163)();
+	exports.push([module.id, ".cv-MasonryGallery {\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: row wrap;\n  font-size: 0;\n  margin: 0 auto;\n  width: 80%; }\n\n.cv-MasonryGallery-figure {\n  margin: 0; }\n\n.cv-MasonryGallery-image {\n  height: auto;\n  width: 100%; }\n\n@media all and (max-width: 900px) {\n  .cv-MasonryGallery {\n    width: 100%; } }\n", ""]);
 
 /***/ }
 /******/ ]);
