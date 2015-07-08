@@ -1,4 +1,4 @@
-cv-Gallery
+# cv-masonry-gallery
 
 ## Description
 Masonry gallery based on ReactJS component.
@@ -34,7 +34,7 @@ $ npm test
 ```
 
 ## Usage
-```
+```javascript
 const images = [
   'orange-butterfly.jpg', 'butterfly-on-yellow-flower.jpg',
   'butterfly-on-petal.jpg', 'albino-butterfly.jpg',
