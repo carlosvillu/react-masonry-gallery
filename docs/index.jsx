@@ -1,5 +1,6 @@
 import React from 'react';
 import {MasonryGallery} from '../src';
+import './style.scss';
 import '../src/index.scss';
 
 const images = [
@@ -8,3 +9,4 @@ const images = [
   'blue-butterfly.jpg'].map( filename => `https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/${filename}` );
 
 React.render(<MasonryGallery images={images}/>, document.getElementById('main'));
+React.render(<MasonryGallery images={images}/>, document.getElementById('main-width'));

@@ -1,0 +1,33 @@
+.w-60 {
+  width: 60%;
+}
+
+.Preview {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+.Preview-title {
+  border-bottom: 1px solid #e2e5e6;
+  background-color: #f2f2f2;
+  color: #666666;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.Preview-content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Preview-demo {
+  margin: 10px auto;
+  text-align: center;
+}
+
