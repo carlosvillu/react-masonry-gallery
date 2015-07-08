@@ -1,2 +1,33 @@
-<div id="main"></div>
-<script src="./dist/index.js"></script>
+<!DOCTYPE html>
+<html lang="en" class="infojobs">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shibsted ReactJS themes showcase</title>
+
+    <!-- ink-flex -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="//cdn.ink.sapo.pt/3.1.9/css/ink-flex.min.css">
+  </head>
+  <body class="ink-grid">
+    <section class="Preview">
+      <header class="Preview-title column-group push-center">
+        <div class="all-100">Gallery 100% width</div>
+      </header>
+      <div class="Preview-content column-group push-center horizontal-gutters">
+        <div id="main" class="all-100"></div>
+      </div>
+    </section>
+
+    <section class="Preview">
+      <header class="Preview-title column-group push-center">
+        <div class="all-100">Gallery 60% width</div>
+      </header>
+      <div class="Preview-content column-group push-center horizontal-gutters">
+        <div id="main-width" class="all-100 w-60"></div>
+      </div>
+    </section>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>

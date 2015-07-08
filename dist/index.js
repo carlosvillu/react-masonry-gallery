@@ -63,11 +63,14 @@
 
 	__webpack_require__(161);
 
+	__webpack_require__(165);
+
 	var images = ['orange-butterfly.jpg', 'butterfly-on-yellow-flower.jpg', 'butterfly-on-petal.jpg', 'albino-butterfly.jpg', 'blue-butterfly.jpg'].map(function (filename) {
 	  return 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/' + filename;
 	});
 
 	_react2['default'].render(_react2['default'].createElement(_src.MasonryGallery, { images: images }), document.getElementById('main'));
+	_react2['default'].render(_react2['default'].createElement(_src.MasonryGallery, { images: images }), document.getElementById('main-width'));
 
 /***/ },
 /* 2 */
@@ -20625,8 +20628,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./style.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./style.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -20640,7 +20643,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(163)();
-	exports.push([module.id, ".cv-MasonryGallery {\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: row wrap;\n  font-size: 0;\n  margin: 0 auto;\n  width: 80%; }\n\n.cv-MasonryGallery-figure {\n  margin: 2px; }\n\n.cv-MasonryGallery-image {\n  height: auto;\n  width: 100%; }\n\n@media all and (max-width: 900px) {\n  .cv-MasonryGallery {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, ".w-60 {\n  width: 60%; }\n\n.Preview {\n  background-color: #ffffff;\n  margin-bottom: 15px; }\n\n.Preview-title {\n  border-bottom: 1px solid #e2e5e6;\n  background-color: #f2f2f2;\n  color: #666666;\n  text-align: center;\n  font-size: 18px;\n  line-height: 50px; }\n\n.Preview-content {\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n  -ms-flex-pack: center;\n  justify-content: center; }\n\n.Preview-demo {\n  margin: 10px auto;\n  text-align: center; }\n", ""]);
 
 /***/ },
 /* 163 */
@@ -20922,6 +20925,39 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(166);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(164)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./index.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 166 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(163)();
+	exports.push([module.id, ".cv-MasonryGallery {\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: row wrap;\n  font-size: 0;\n  margin: 0 auto;\n  width: 80%; }\n\n.cv-MasonryGallery-figure {\n  margin: 2px; }\n\n.cv-MasonryGallery-image {\n  height: auto;\n  width: 100%; }\n\n@media all and (max-width: 900px) {\n  .cv-MasonryGallery {\n    width: 100%; } }\n", ""]);
 
 /***/ }
 /******/ ]);
