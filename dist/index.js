@@ -20640,7 +20640,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(163)();
-	exports.push([module.id, ".cv-MasonryGallery {\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: row wrap;\n  font-size: 0;\n  margin: 0 auto;\n  width: 80%; }\n\n.cv-MasonryGallery-figure {\n  margin: 0; }\n\n.cv-MasonryGallery-image {\n  height: auto;\n  width: 100%; }\n\n@media all and (max-width: 900px) {\n  .cv-MasonryGallery {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, ".cv-MasonryGallery {\n  box-sizing: border-box;\n  display: flex;\n  flex-flow: row wrap;\n  font-size: 0;\n  margin: 0 auto;\n  width: 80%; }\n\n.cv-MasonryGallery-figure {\n  margin: 2px; }\n\n.cv-MasonryGallery-image {\n  height: auto;\n  width: 100%; }\n\n@media all and (max-width: 900px) {\n  .cv-MasonryGallery {\n    width: 100%; } }\n", ""]);
 
 /***/ },
 /* 163 */
