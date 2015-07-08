@@ -1,6 +1,5 @@
 import React from 'react';
 import {MasonryGallery} from '../src';
-import './style.scss';
 import '../src/index.scss';
 
 const images = [
