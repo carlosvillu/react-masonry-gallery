@@ -15,6 +15,7 @@ To run the lint tasks we have dependencies of:
 
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
 * [scss-lint](https://github.com/brigade/scss-lint)
+* Node v0.12
 
 If that tools are not installed you cant commit. Because the lint pass never will be ok.
 
