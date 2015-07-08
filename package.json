@@ -1,6 +1,6 @@
 {
-  "name": "cv-gallery",
-  "version": "0.0.0",
+  "name": "cv-masonry-gallery",
+  "version": "1.0.0",
   "main": "dist/",
   "scripts": {
     "clean:dist": "rimraf ./dist/*",

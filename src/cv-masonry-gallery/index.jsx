@@ -20,7 +20,7 @@ const descentOrder = (a, b) => {
                                              : -1;
 };
 
-export default class Gallery extends React.Component {
+export default class MasonryGallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {images: []};
@@ -31,11 +31,13 @@ export default class Gallery extends React.Component {
   render() {
     const widest = this.state.images.length ? this.state.images[0].ratio : null;
     return (
-      <div className='cv-Gallery'>
-        {this.state.images.map( (image, index) => (<MasonryImage key={index} src={image.url} ratio={image.ratio} widest={widest} />) )}
+      <div className='cv-MasonryGallery'>
+        {this.state.images.map((image, index) => {
+          return (<MasonryImage key={index} src={image.url} ratio={image.ratio} widest={widest} />);
+        })}
       </div>
     );
   }
 }
 
-Gallery.propTypes = {images: React.PropTypes.array.isRequired};
+MasonryGallery.propTypes = {images: React.PropTypes.array.isRequired};

@@ -1,4 +1,4 @@
-.cv-Gallery {
+.cv-MasonryGallery {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
@@ -7,17 +7,17 @@
   width: 80%;
 }
 
-.cv-Gallery-figure {
+.cv-MasonryGallery-figure {
   margin: 0;
 }
 
-.cv-Gallery-image {
+.cv-MasonryGallery-image {
   height: auto;
   width: 100%;
 }
 
 @media all and (max-width: 900px) {
-  .cv-Gallery {
+  .cv-MasonryGallery {
     width: 100%;
   }
 }

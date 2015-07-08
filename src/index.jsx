@@ -1,3 +1,3 @@
-import Gallery from './cv-gallery';
+import MasonryGallery from './cv-masonry-gallery';
 
-export default {Gallery};
+export default {MasonryGallery};
