@@ -15,7 +15,7 @@ linters:
     enabled: true
 
   Comment:
-    enabled: true
+    enabled: false
 
   DebugStatement:
     enabled: true
@@ -43,7 +43,7 @@ linters:
 
   HexLength:
     enabled: true
-    style: short
+    style: long
 
   HexNotation:
     enabled: true
@@ -89,6 +89,7 @@ linters:
 
   PropertySortOrder:
     enabled: true
+    order: concentric
 
   PropertySpelling:
     enabled: true
@@ -96,7 +97,7 @@ linters:
 
   SelectorDepth:
     enabled: true
-    max_depth: 5
+    max_depth: 3
 
   SelectorFormat:
     enabled: true
@@ -117,7 +118,7 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
-    style: one_space
+    style: at_least_one_space
 
   SpaceAfterPropertyName:
     enabled: true
@@ -151,10 +152,10 @@ linters:
     enabled: false
 
   UrlQuotes:
-    enabled: true
+    enabled: false
 
   VendorPrefixes:
-    enabled: false
+    enabled: true
 
   ZeroUnit:
     enabled: true
