@@ -1,10 +1,14 @@
 .cv-MasonryGallery {
-  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  font-size: 0;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
-  width: 80%;
+  font-size: 0;
+
+  @media only screen and (min-width: 900px) {
+    width: 80%;
+  }
 }
 
 .cv-MasonryGallery-figure {
@@ -12,12 +16,6 @@
 }
 
 .cv-MasonryGallery-image {
-  height: auto;
   width: 100%;
-}
-
-@media all and (max-width: 900px) {
-  .cv-MasonryGallery {
-    width: 100%;
-  }
+  height: auto;
 }
