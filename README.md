@@ -5,7 +5,7 @@ Masonry gallery based on ReactJS component.
 
 All the credit for [@dudleystorey](https://twitter.com/dudleystorey) for his black magic post about flex ratios:
 
-http://demosthenes.info/blog/929/Modern-Masonry-with-Flexbox-and-JavaScript
+http://thenewcode.com/929/Modern-Masonry-with-Flexbox-and-JavaScript
 
 ## Instalation
 Clone this repository and run:
